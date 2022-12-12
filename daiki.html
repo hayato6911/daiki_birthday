@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="daiki.css" />
+<script src="daiki.js"></script>
+</head>
+<body>
+<div class="quizzes-container">
+  <h1>次の問いに答えなさい。<br>全問正解で景品GET</h1>
+  <h3>答え方<br>1.動画の通り「解答する」を押してください連打するとおかしくなります<br>2.全問正解すると秘密のコードがでます<br>3.「0問正解・1問正解・2問正解」のパターンも見てね</h3>
+  <video controls src="誕生日.mp4"></video>
+  <div class="quiz-container">
+    <h2>第1問</h2>
+    <div>
+      <p>くどうはやと君の生まれは？</p>
+    </div>
+    <form id="quiz-1">
+      <input name="answer" type="radio" value="a">川越</input>
+      <br><input name="answer" type="radio" value="b">越谷</input>
+      <br><input name="answer" type="radio" value="c">草加</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第2問</h2>
+    <div>
+      <p>くどうはやと君が中学の時友達の家でよくライブしてた曲は？</p>
+    </div>
+    <form id="quiz-2">
+      <input name="answer" type="radio" value="a">LOVE & PEACH(ゆず)</input>
+      <br><input  name="answer" type="radio" value="b">イケナイ太陽/(ORANGE RANGE)</input>
+      <br><input name="answer" type="radio" value="c">新宝島(サカナクション)</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz2();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第3問</h2>
+    <div>
+      <p>くどうはやと君がこの中で一番大切と思っているのは？</p>
+    </div>
+    <form id="quiz-3">
+      <input name="answer" type="radio" value="a">お金</input>
+      <br><input name="answer" type="radio" value="b">マークX</input>
+      <br><input name="answer" type="radio" value="c">かわしまだいき君</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>  
+  </div>
+  <div id="score-container">
+    <p id="score-message"></p>
+  </div>
+  <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+</div>
+</body>
